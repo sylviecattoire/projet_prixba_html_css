@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+$blue: #2d4059;
+$red: #EA5455;
+$gris: #E5E5E5;
+
+body, html {
+    font-family: 'Montserrat', sans-serif;    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: $gris;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px 10px 40px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $blue;
+    margin: 10px;
+}
+
+.nav {
+    padding: 20px 50px;
+}
+
+.nav2 {
+    display: flex;
+    align-items: center;
+}
+
+.nav2 > a {
+    font-size: 0.8rem;
+    margin-right: 40px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav2 > a:hover {
+    color: #9e9898;
+}
+
+.number {
+    display: flex;
+    background-color: $red;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    margin-right: 15px;
+}
+.bold {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: $blue;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+select {
+    padding: 8px 5px;
+    border-radius: 5px;
+    background-color: $gris;
+}
+
+input {
+    height: 31px;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+.search_button {
+    color: white;
+    background-color: $red;
+    text-decoration: none;
+    padding: 8px 5px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+.shop {
+    color: white;
+}
+.shop > a {
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.shop > a:hover {
+    color: #9e9898;
+}
+
