@@ -57,4 +57,51 @@ a {
   color: inherit;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  margin-bottom: 60px;
+  color: #EA5455;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* section grid */ 
+.container {
+  max-width: 1115px;
+  margin: 0 auto;
+}
+
+.offers h2 {
+  margin-right: 10px;
+}
+
+.offers a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.7rem;
+}
+
+/* section grid */
+.grid_container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 15px;
+}
+
+.item {
+  background-color: #2D4059;
+  color: white;
+  height: 120px;
+  width: 120px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.grid_container div i {
+  margin: 30px auto 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
