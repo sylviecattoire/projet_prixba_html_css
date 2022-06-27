@@ -29,25 +29,14 @@ h2 {
     color: black;
     font-size: 0.7rem;
 }
-/* section grid */ 
 
-.grid_container {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 15px;
-    margin-bottom: 200px;
-}
-.item {
-    background-color: #2D4059;
-    color: white;
-    height: 120px;
-    width: 120px;
-    border-radius: 15px;
-    text-align: center;
-}
+@media screen and (max-width:480px) {
 
-.grid_container div i{
-    margin: 30px auto 10px;
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
 }
 
 /* Section Bestsellers */
@@ -91,6 +80,56 @@ h2 {
     color: #42CC58;
 }
 
+@media screen and (max-width: 480px) {
+
+    .bestsellers_section {
+        margin-bottom: 90px;
+    }
+
+    .card_container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card_container .card:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+/* Section grid */ 
+
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 15px;
+    margin-bottom: 200px;
+}
+.item {
+    background-color: #2D4059;
+    color: white;
+    height: 120px;
+    width: 120px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.grid_container div i {
+    margin: 30px auto 10px;
+}
+
+@media screen and (max-width: 480px) {
+
+    .grid_container {
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 90px;
+    }
+
+    .item {
+        place-self: center;
+    }
+
+}
+
 /* Section Choice */
 
 .choice_section {
@@ -117,4 +156,17 @@ h2 {
     object-fit: cover;
     object-position: bottom;
     margin-bottom: 20px;
+}
+
+@media screen and (max-width: 480px) {
+
+    .choice_section {
+        margin-bottom: 90px;
+    }
+
+    .choice_container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
 }

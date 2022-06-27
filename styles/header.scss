@@ -59,6 +59,7 @@ header h1 {
     height: 22px;
     margin-right: 15px;
 }
+
 .bold {
     text-align: center;
     font-weight: bold;
@@ -102,5 +103,32 @@ input {
 
 .shop > a:hover {
     color: #9e9898;
+}
+
+@media screen and (max-width: 480px) {
+
+    nav {
+        padding: 30px 15px;
+    }
+
+    .categories {
+        display: none;
+    }
+
+    .shop {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .shop a {
+        margin: 0;
+        place-self: center;
+    }
+
+    .shop a:last-child {
+        font-size: 2rem;
+    }
+
 }
 
